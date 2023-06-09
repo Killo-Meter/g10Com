@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ISU.css">
+</head>
+<body>
+	<div class="calculator">
+		<form>
+			<div type="text "class="result" id="sum"> </div>
+		</form>
+			<button class="clear-btn" onclick="clearCalculator()">C</button>
+			<button class="division-btn" onclick="operatorPress('÷')">÷</button>
+			<br>
+			<button class="top-btn" onclick="numberPress(7)">7</button>
+			<button class="number-btn" onclick="numberPress(8)">8</button>
+			<button class="number-btn" onclick="numberPress(9)">9</button>
+			<button class="multiplication-btn" onclick="operatorPress('x')">x</button>
+			<br>
+			<button class="top-btn" onclick="numberPress(4)">4</button>
+			<button class="number-btn" onclick="numberPress(5)">5</button>
+			<button class="number-btn" onclick="numberPress(6)">6</button>
+			<button class="minus-btn" onclick="operatorPress('-')">-</button>
+			<br>
+			<button class="top-btn" onclick="numberPress(1)">1</button>
+			<button class="number-btn" onclick="numberPress(2)">2</button>
+			<button class="number-btn" onclick="numberPress(3)">3</button> 
+			<button class="plus-btn" onclick="operatorPress('+')">+</button>
+			<br>
+			<button class="zero-btn" onclick=" numberPress(0)">0</button>
+			<button class="equal-btn" id="equal" onclick="calculate()">=</button>
+	</div>
+<script src="ISU.js"></script>
+</body>
+</html>
